@@ -37,7 +37,8 @@ function BusStop() {
       const response = await fetch(apiUrl, {
         method: 'GET',
         headers: {
-          'Ocp-Apim-Subscription-Key': '18db40a7d1f84e74ae59d31092f05902'
+          'Ocp-Apim-Subscription-Key': import.meta.env.VITE_AT_SUBSCRIPTION_PRIMARY_KEY
+          
         }
       });
 
